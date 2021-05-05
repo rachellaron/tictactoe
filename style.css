@@ -1,0 +1,106 @@
+body {
+    background-image: url("images/background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.mobilegame {
+    border: black 10px solid;
+    background-color: #ffffff;
+    margin: 50px auto 50px auto;
+    border-radius: 50px;
+    height: 869px;
+    width: 414px;
+    padding:5px;
+    background-image: url("images/wallpaper.jpg");
+    background-size: 100%;
+  }
+
+img {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bolder;
+    border: 5px solid #996f24;
+    border-radius: 10px;
+    background-color: #996f24;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#game {
+    display: grid;
+    width:400px;
+    height:400px;
+    font-size:48px;
+    gap:5px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    margin:0 auto;
+}
+
+ #game > div {
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 30px;
+    padding: 5px;
+    font-size: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-align: center;
+ }
+
+ #game > div:hover {
+    cursor: pointer;
+ }
+
+ button {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #996f24;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+  
+button:hover {
+    background-color: #ffcc34;
+    color: #996f24;
+}
+ 
+  
+.musicOn{
+    background-color: #996f24;
+    width: 14%;
+    float: right;
+    text-align: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;  
+    margin-right: 25px;
+  }
+
+.musicOff {
+    background-color: #996f24;
+    width: 15%;
+    float: right;
+    text-align: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+}
