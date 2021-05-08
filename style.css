@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 body {
     background-image: url("images/background.jpg");
     height: 100%;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
-}
+} 
 
-
+/* Main Container */
 .mobilegame {
     border: black 10px solid;
     background-color: #ffffff;
@@ -21,11 +23,11 @@ body {
 
 img {
     width: 100%;
-}
+  }
 
 h1 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Itim', cursive;
     color: white;
     font-weight: bolder;
     border: 5px solid #996f24;
@@ -33,8 +35,10 @@ h1 {
     background-color: #996f24;
     margin-right: 50px;
     margin-left: 50px;
-}
+    margin-bottom: 10px;;
+  }
 
+/* Game Grid */
 #game {
     display: grid;
     width:400px;
@@ -44,22 +48,24 @@ h1 {
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
     margin:0 auto;
-}
+  }
 
+
+/* Game Divs */
  #game > div {
     background: rgba(255, 255, 255, 0.6);
     font-size: 30px;
     padding: 5px;
     font-size: 90px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
+    font-family:'Itim', cursive;
     text-align: center;
- }
+  }
 
  #game > div:hover {
     cursor: pointer;
  }
 
+ /* Button Style */
  button {
     display: block;
     width: 100%;
@@ -72,35 +78,38 @@ h1 {
     color: #ffffff;
     border-radius: 10px;
     margin-top: 10px;
+    font-family: 'Itim', cursive;;
 }
   
 button:hover {
     background-color: #ffcc34;
     color: #996f24;
 }
- 
-  
+
+
+/* Music Buttons*/
 .musicOn{
     background-color: #996f24;
-    width: 14%;
+    width: 10%;
     float: right;
     text-align: center;
-    padding: 5px 10px;
     cursor: pointer;
-    margin-top: 5px;;
+    margin-top: 5px;
     border-radius: 0px 10px 10px 0px;
     display: flex;  
     margin-right: 25px;
+    padding-left: 15px;
   }
+
 
 .musicOff {
     background-color: #996f24;
-    width: 15%;
+    width: 10%;
     float: right;
     text-align: center;
-    padding: 5px 10px;
     cursor: pointer;
     margin-top: 5px;;
     border-radius: 10px 0px 0px 10px;
     display: flex;
+    padding-left: 15px;
 }

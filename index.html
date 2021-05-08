@@ -5,27 +5,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/935f70fe09.js" crossorigin="anonymous"></script>
+
+  <link rel="shortcut icon" type="image/jpg" href="images/favicon.png" />
   <title>Tic Tac Toe</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+  <!-- Music Bar Files -->
   <audio id="myAudio">
     <source src="Animal Crossing New Horizons Soundtrack - Welcome Horizons (Full Version).mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
+  <!-- Mobile Game Container -->
   <div class="mobilegame">
 
-    <button class="musicOn" onclick="playAudio()" type="button">Play</button>
-    <button class="musicOff" onclick="pauseAudio()" type="button">Pause</button>
+    <!-- Music Buttons -->
+    <button class="musicOn" onclick="playAudio()" type="button"><i class="fas fa-play"></i></button>
+    <button class="musicOff" onclick="pauseAudio()" type="button"><i class="fas fa-pause"></i></button>
 
+    <!-- Header Image & Title/Game Status -->
     <header>
-      <img src="images/logo.png" alt="">
+      <img id="myimg" src="images/logo.png" alt="">
       <h1>TIC TAC TOE</h1>
     </header>
 
+    <!-- Game Boxes -->
     <div id="game">
       <div class="gamebox" id="0"></div>
       <div class="gamebox" id="1"></div>
@@ -38,10 +45,10 @@
       <div class="gamebox" id="8"></div>
     </div>
 
-    <button onClick="window.location.reload();">Restart</button>
+    <button onClick="window.location.reload();">RELOAD</button>
   </div>
 
-<script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
